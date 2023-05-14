@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeffrey Godzisz: Portfolio: About Me</title>
+    <script src="https://kit.fontawesome.com/f25658dcba.js" crossorigin="anonymous"></script>
+    <style>
+
+    body {
+      font-family: "Lato", sans-serif; background-image: url(repeated-square-dark.webp); background-repeat: repeat;
+    }
+    .header {
+        margin-left: 200px;
+        Padding: 30px;
+        text-align: center;
+        color: white;
+    }
+
+    /* Style for my headshot in sidebar*/
+    #headshot {
+        width:150px;
+        border: 1px solid #818181;
+        border-radius: 3px;
+        padding: 4px;
+        margin-left: 10px;
+        border-color: beige;
+    }
+    /* Fixed sidenav, full height */
+    .sidenav {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-image: url(cork-board.webp);
+      background-repeat: repeat;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+    
+    /* Style the sidenav links and the dropdown button */
+    .sidenav a, .dropdown-btn {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #000000;
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+    
+    /* On mouse-over */
+    .sidenav a:hover, .dropdown-btn:hover {
+      color: #f1f1f1;
+    }
+    
+    /* Main content */
+    .main {
+      margin-left: 200px; /* Same as the width of the sidenav */
+      font-size: 20px; /* Increased text to enable scrolling */
+      padding: 0px 10px;
+      color: white;
+    
+      
+    }
+    
+    /* Add an active class to the active dropdown button */
+    .active {
+      background-color: rgba(121, 94, 6, 0.486);
+      color: white;
+    }
+    
+    /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+    .dropdown-container {
+      display: none;
+      background-color: #a08800a4;
+      padding-left: 8px;
+    }
+    
+    /* Optional: Style the caret down icon */
+    .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+    }
+    .fa-code{
+        float: left;
+        padding-right: 8px;
+    }
+    .fa-user{
+        float: left;
+        padding-right: 8px;
+    }
+    .fa-briefcase{
+        float: left;
+        padding-right: 8px;
+    }
+    .fa-at{
+        float: left;
+        padding-right: 8px;
+    }
+    .fa-magnifying-glass{
+        float: left;
+        padding-right: 8px;
+    }
+    
+    /* Some media queries for responsiveness */
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    </style>
+    </head>
+    <body>
+
+    <!-- Deploy the Sidebar -->
+
+    <div class="sidenav">
+        <!--Sidebar image of headshot-->
+        <div id ="headshot">
+            <img src="Headshot.jpg" alt="A recent headshot of the creator of this portfolio page." style="width: 150px;" >
+        </div>
+        <!--Menu inside the sidebar-->
+        <a href="Portfolio_page.html"><i class= "fa-solid fa-home"></i>Home</a>
+        <a href="aboutMe.html"><i class= "fa-solid fa-user"></i>About Me</a>
+        <a href="workHistory.html"><i class="fa-solid fa-briefcase"></i>Work History</a>
+        <a href="Contact.HTML"><i class="fa-solid fa-at"></i>Contact</a>
+        <button class="dropdown-btn"><i class="fa-solid fa-code"></i>Examples
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="C#Examples.html">C#</a>
+          <a href="PythonExamples.html">Python</a>
+          <a href="JavascriptExamples.HTML">JavaScript</a>
+        </div>
+    </div>
+    
+<div class="header">
+   
+    <h1>Jeffrey Godzisz</h1>
+    <h2>Portfolio Page</h2>
+    
+</div>
+<div class="main">
+    <h1>
+     Professionally:
+    </h1>
+    <h2>
+        Summary:
+    </h2>
+    <p>
+        After a decade in the banking industry and during the Covid-19 pandemic, I decided I wanted to use my passion for technology, problem solving, and customer service in a more technical and impactful way.  My research brought me to Software Engineering
+        and Computer Programming.  I found a program that suited my unique needs at Pitt Community College where I graduated Summa Cum Laude with a Associates Degree in IT: Computer Programming and Development.  
+    </p>
+
+</div>
+    <script src="index.js">
+        
+    </script>
+</body>
+</html>
