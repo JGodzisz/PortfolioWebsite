@@ -5,8 +5,8 @@ import time
 import py_compile
 import pyaudio
 
-#set API Key
-openai.api_key = "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"
+#set API Key!!!!!!
+openai.api_key = "YOUR_API_KEY_HERE"
 
 #initalize the text-to-speech
 engine = pyttsx3.init()
@@ -31,6 +31,8 @@ def generate_response(prompt):
     return response["choices"][0]["text"]
 
 def speak_text(text):
+    engine.getProperty('rate')
+    engine.setProperty('rate', 175)
     engine.say(text)
     engine.runAndWait()
 
